@@ -1,0 +1,4 @@
+enum GlassType
+{
+	 STANDARD_LENSES,PRIME_LENSES
+}
