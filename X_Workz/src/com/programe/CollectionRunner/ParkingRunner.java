@@ -60,7 +60,7 @@ public class ParkingRunner {
         }
 
         System.out.println("=========================================");
-        System.out.println("The Paper Properties In Descending Order");
+        System.out.println("The Parking Properties In Descending Order");
         System.out.println("==========================================");
 
         Comparator<ParkingDTO> comparator4=new ParkingComparatorVehicleTypeDesc();
