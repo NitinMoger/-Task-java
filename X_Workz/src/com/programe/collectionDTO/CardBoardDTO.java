@@ -15,7 +15,6 @@ public class CardBoardDTO implements Comparable<CardBoardDTO>{
     private int quantity;
     @Override
     public int compareTo(CardBoardDTO o) {
-        int color=String.CASE_INSENSITIVE_ORDER.compare(this.color,o.color);
-        return color;
+        return Integer.compare(this.quantity,o.getQuantity());
     }
 }

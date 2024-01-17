@@ -14,6 +14,6 @@ public class ThreadDTO implements Comparable<ThreadDTO>{
     @Override
     public int compareTo(ThreadDTO o) {
 
-        return Double.compare(this.cost,o.cost);
+        return Double.compare(this.cost,o.getCost());
     }
 }

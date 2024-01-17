@@ -1,5 +1,6 @@
 package com.programe.CollectionRunner;
 
+import com.programe.collectionDTO.AlaramDTO;
 import com.programe.collectionDTO.CardBoardDTO;
 
 import java.util.ArrayList;
@@ -21,44 +22,17 @@ public class CardBoardRunner {
         list.add(cardBoardDTO3);
         list.add(cardBoardDTO4);
 
-        System.out.println("Default Ascending order based on Color....");
         Collections.sort(list);
-        for (CardBoardDTO color:list
-        ) {
-            System.out.println(color);
+        System.out.println("After Sorting in Asending order");
+        for (CardBoardDTO ref : list) {
+            System.out.println(ref);
         }
 
-        System.out.println(" Ascending order based on Cost....");
-        Collections.sort(list,((o1, o2) ->{ return Double.compare(o1.getCost(), o2.getCost());} ));
-        for (CardBoardDTO c:list
-        ) {
-            System.out.println(c);
+        Collections.sort(list, (o1, o2) -> Integer.compare(o2.getQuantity(), o1.getQuantity()));
+        System.out.println("After Sorting in Descending order");
+        for (CardBoardDTO ref : list) {
+            System.out.println(ref);
         }
 
-        System.out.println(" Ascending order based on Quantity....");
-        Collections.sort(list,((o1, o2) ->{ return Integer.compare(o1.getQuantity(), o2.getQuantity());} ));
-        for (CardBoardDTO c:list
-        ) {
-            System.out.println(c);
-        }
-        System.out.println("Descending order based on Color..");
-        Collections.sort(list,((o1, o2) ->{return  String.CASE_INSENSITIVE_ORDER.compare(o2.getColor(), o1.getColor());} ));
-        for (CardBoardDTO c:list
-        ) {
-            System.out.println(c);
-        }
-        System.out.println(" Descending order based on Cost....");
-        Collections.sort(list,((o1, o2) ->{ return Double.compare(o2.getCost(), o1.getCost());} ));
-        for (CardBoardDTO c:list
-        ) {
-            System.out.println(c);
-        }
-
-        System.out.println(" Descending order based on Quantity....");
-        Collections.sort(list,((o1, o2) ->{ return Integer.compare(o2.getQuantity(), o1.getQuantity());} ));
-        for (CardBoardDTO c:list
-        ) {
-            System.out.println(c);
-        }
     }
 }

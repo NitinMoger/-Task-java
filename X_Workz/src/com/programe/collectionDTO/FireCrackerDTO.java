@@ -13,7 +13,6 @@ public class FireCrackerDTO implements Comparable<FireCrackerDTO>{
     private String color;
     @Override
     public int compareTo(FireCrackerDTO o) {
-        int s=Double.compare(this.heat,o.heat);
-        return s;
+        return this.color.compareTo(o.getColor());
     }
 }

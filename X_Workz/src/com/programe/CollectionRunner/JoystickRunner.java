@@ -1,5 +1,6 @@
 package com.programe.CollectionRunner;
 
+import com.programe.collectionDTO.CardBoardDTO;
 import com.programe.collectionDTO.JoystickDTO;
 
 import java.util.ArrayList;
@@ -21,44 +22,19 @@ public class JoystickRunner {
         list.add(JoystickDTO3);
         list.add(JoystickDTO4);
 
-        System.out.println("Default Ascending order based on Cost....");
+        System.out.println("Default Ascending order....");
         Collections.sort(list);
-        for (JoystickDTO o:list
+        for (JoystickDTO ref:list
         ) {
-            System.out.println(o);
-        }
-
-        System.out.println(" Ascending order based on Brand....");
-        Collections.sort(list,((o1, o2) ->{ return String.CASE_INSENSITIVE_ORDER.compare(o1.getBrand(), o2.getBrand());} ));
-        for (JoystickDTO c:list
-        ) {
-            System.out.println(c);
-        }
-
-        System.out.println(" Ascending order based on Warranty....");
-        Collections.sort(list,((o1, o2) ->{ return Integer.compare(o1.getWarranty(), o2.getWarranty());} ));
-        for (JoystickDTO c:list
-        ) {
-            System.out.println(c);
-        }
-        System.out.println("Descending order based on Brand..");
-        Collections.sort(list,((o1, o2) ->{return  String.CASE_INSENSITIVE_ORDER.compare(o2.getBrand(), o1.getBrand());} ));
-        for (JoystickDTO c:list
-        ) {
-            System.out.println(c);
-        }
-        System.out.println(" Descending order based on Cost....");
-        Collections.sort(list,((o1, o2) ->{ return Double.compare(o2.getCost(), o1.getCost());} ));
-        for (JoystickDTO c:list
-        ) {
-            System.out.println(c);
+            System.out.println(ref);
         }
 
         System.out.println(" Descending order based on Warranty....");
-        Collections.sort(list,((o1, o2) ->{ return Integer.compare(o2.getWarranty(), o1.getWarranty());} ));
-        for (JoystickDTO c:list
-        ) {
-            System.out.println(c);
+        Collections.sort(list,(o1, o2) ->Integer.compare(o2.getWarranty(), o1.getWarranty()));
+        for (JoystickDTO ref1:list) {
+            System.out.println(ref1);
         }
+
+
     }
 }

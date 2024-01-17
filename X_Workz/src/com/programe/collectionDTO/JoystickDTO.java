@@ -13,6 +13,6 @@ public class JoystickDTO implements Comparable<JoystickDTO>{
     private int warranty;
     @Override
     public int compareTo(JoystickDTO o) {
-        return Double.compare(this.cost,o.cost);
+        return Integer.compare(this.warranty,o.getWarranty());
     }
 }

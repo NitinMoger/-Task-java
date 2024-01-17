@@ -14,8 +14,7 @@ public class AlaramDTO implements Comparable<AlaramDTO>{
 
     @Override
     public int compareTo(AlaramDTO o) {
-        int no= Integer.compare(this.quantity,o.quantity);
-        return no;
+        return this.type.compareTo(o.getType());
     }
 
 }

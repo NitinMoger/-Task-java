@@ -12,8 +12,8 @@ public class WingsDTO implements Comparable<WingsDTO> {
     private String type;
     private int warranty;
     @Override
-    public int compareTo(WingsDTO o) {
-        return Integer.compare(this.warranty,o.warranty);
+    public int compareTo(WingsDTO o){
+        return Double.compare(this.cost,o.getCost());
     }
 
 

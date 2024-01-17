@@ -10,9 +10,10 @@ import lombok.*;
 public class PinDTO implements Comparable<PinDTO>{
     private String type;
     private double cost;
+    private String use;
 
     @Override
     public int compareTo(PinDTO o) {
-        return Double.compare(this.cost,o.cost);
+        return Double.compare(this.cost,o.getCost());
     }
 }
