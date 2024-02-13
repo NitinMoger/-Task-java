@@ -4,38 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aefbba3c-26af-4918-9148-33410cbb47a4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../X_Workz/src/com/programe/CollectionRunner/DiseaseDTORunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../X_Workz/src/com/programe/CollectionRunner/PlayGroundDTORunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../X_Workz/src/com/programe/CollectionRunner/WatchDtoRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../X_Workz/src/com/programe/collectionDTO/DiseaseDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../X_Workz/src/com/programe/collectionDTO/PlayGroundDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../X_Workz/src/com/programe/collectionDTO/WatchDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dam/src/main/java/com/xworkz/dto/DamDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dam/src/main/java/com/xworkz/repository/DamRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dam/src/main/java/com/xworkz/repository/DamRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dam/src/main/java/com/xworkz/runner/DamRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dam/src/main/java/com/xworkz/service/DamService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dam/src/main/java/com/xworkz/service/DamServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xworkz/flightDto/FlightBooking.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xworkz/flightRepository/FlightBookingRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xworkz/flightRepository/FlightBookingRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xworkz/flightService/FlightBookingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xworkz/flightService/FlightBookingServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xworkz/runner/FlightBookingRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xworkz/flight/dto/FlightBookingDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xworkz/flight/repository/FlightBookingRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xworkz/flight/repository/FlightBookingRepositoryImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xworkz/flight/runner/FlightBookingRunner.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xworkz/flight/service/FlightBookingService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xworkz/flight/service/FlightBookingServiceImpl.java" beforeDir="false" />
-    </list>
+    <list default="true" id="aefbba3c-26af-4918-9148-33410cbb47a4" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
