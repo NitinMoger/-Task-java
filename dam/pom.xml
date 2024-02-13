@@ -5,12 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.xworkz</groupId>
-    <artifactId>flight_booking_information</artifactId>
+    <artifactId>dam</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>pom</packaging>
-    <modules>
-        <module>dam</module>
-    </modules>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
