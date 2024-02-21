@@ -6,6 +6,7 @@ import java.security.Key;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class ShirtBrandMapping {
 
@@ -18,8 +19,12 @@ public class ShirtBrandMapping {
         map.put("halfSleeve","Polo");
         map.put("ArrorShrirt","Raymond");
 
-        System.out.println( map.keySet());
-        System.out.println(map.values());
+        System.out.println("*****All Shirts Names****");
+        map.keySet().forEach(System.out::println);
+
+        System.out.println("*****All Brand Name******");
+        map.values().forEach(System.out::println);
+
 
 
         Map<String,String> wallColorMap=new HashMap<>();
@@ -30,8 +35,10 @@ public class ShirtBrandMapping {
         wallColorMap.put("faced Wall","Pink");
 
         System.out.println("=======================");
-        System.out.println(wallColorMap.keySet());
-        System.out.println(wallColorMap.values());
+        System.out.println("*****Wall Name******");
+        wallColorMap.keySet().forEach(System.out::println);
+        System.out.println("*****Color of Walls******");
+        wallColorMap.values().forEach(System.out::println);
 
         Map<String,String> tvBrandMap=new HashMap<>();
         tvBrandMap.put("LED","Onida");
@@ -41,8 +48,11 @@ public class ShirtBrandMapping {
         tvBrandMap.put("Plasma","LG");
 
         System.out.println("=======================");
-        System.out.println(wallColorMap.keySet());
-        System.out.println(wallColorMap.values());
+        System.out.println("******Tv Names******");
+        Set<String> set = tvBrandMap.keySet();
+        set.forEach(e-> System.out.println(e));
+        System.out.println("*****Brand Name of All tv******");
+        tvBrandMap.values().forEach(System.out::println);
 
 
         Map<String,String[]> foodIngridientsMap=new HashMap<>();
@@ -50,22 +60,34 @@ public class ShirtBrandMapping {
         foodIngridientsMap.put("Biryani",new String[]{"chilli,salt,Rice,chicken"});
         foodIngridientsMap.put("Samosa",new String[]{"Maida,salt,oil,Onion"});
         foodIngridientsMap.put("Chilli",new String[]{"Chicken,salt,oil,Chilli,Onion"});
-        foodIngridientsMap.put("Paneer Tikka",new String[]{"Panneer,salt,Masala,Onion,Ginger"});
+        foodIngridientsMap.put("Paneer Tikka", new String[]{"Panneer,salt,Masala,Onion,Ginger"});
 
         System.out.println("=============================");
-        System.out.println(foodIngridientsMap.keySet());
-        System.out.println(foodIngridientsMap.values());
+        System.out.println("********Food Names*********");
+        foodIngridientsMap.keySet().forEach(System.out::println);
+        System.out.println("******Ingridients Names*****");
+        foodIngridientsMap.values().forEach(ref-> {
+            for (String ingredient : ref) {
+                System.out.println(ingredient);
+            }
+          });
 
-        Map<String,String> landOwnerMap=new HashMap<>();
-        landOwnerMap.put("Bengaluru","Ravi");
-        landOwnerMap.put("Sirsi","Shambhu");
-        landOwnerMap.put("Davnagere","Anil");
-        landOwnerMap.put("Udupi","Sushan");
-        landOwnerMap.put("Mangaluru","Dinesh");
 
-        System.out.println("=============================");
-        System.out.println(landOwnerMap.keySet());
-        System.out.println(landOwnerMap.values());
+
+
+            Map<String, String> landOwnerMap = new HashMap<>();
+            landOwnerMap.put("Bengaluru", "Ravi");
+            landOwnerMap.put("Sirsi", "Shambhu");
+            landOwnerMap.put("Davnagere", "Anil");
+            landOwnerMap.put("Udupi", "Sushan");
+            landOwnerMap.put("Mangaluru", "Dinesh");
+
+            System.out.println("=============================");
+            System.out.println("*******Land Names*******");
+            Set<String> set1 = landOwnerMap.keySet();
+            set1.forEach(System.out::println);
+            System.out.println("*****Owners Name******");
+            landOwnerMap.values().forEach(System.out::println);
 
 
 
