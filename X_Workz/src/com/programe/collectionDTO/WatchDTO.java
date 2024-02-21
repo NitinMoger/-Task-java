@@ -21,6 +21,6 @@ public class WatchDTO implements Serializable,Comparable<WatchDTO> {
 
     @Override
     public int compareTo(WatchDTO o) {
-        return Integer.compare(this.getWarranty(),o.getWarranty());
+        return Integer.compare(this.getWarranty(), o.getWarranty());
     }
 }

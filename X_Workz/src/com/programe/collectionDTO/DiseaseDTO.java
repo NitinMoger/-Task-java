@@ -14,8 +14,9 @@ public class DiseaseDTO implements Serializable,Comparable<DiseaseDTO> {
     private String etiology;
     private String pathogenesis;
     private String symptoms;
+
     @Override
     public int compareTo(DiseaseDTO o) {
-        return String.CASE_INSENSITIVE_ORDER.compare(this.getName(),o.getName());
+        return String.CASE_INSENSITIVE_ORDER.compare(this.getName(), o.getName());
     }
 }
