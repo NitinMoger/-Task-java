@@ -49,8 +49,8 @@ public class ShirtBrandMapping {
 
         System.out.println("=======================");
         System.out.println("******Tv Names******");
-        Set<String> set = tvBrandMap.keySet();
-        set.forEach(e-> System.out.println(e));
+        Set<String> s = tvBrandMap.keySet();
+        s.forEach(e-> System.out.println(e));
         System.out.println("*****Brand Name of All tv******");
         tvBrandMap.values().forEach(System.out::println);
 
