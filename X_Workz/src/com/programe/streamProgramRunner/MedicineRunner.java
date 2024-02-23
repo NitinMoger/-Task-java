@@ -67,13 +67,6 @@ public class MedicineRunner{
 
 
 
-        System.out.println("=======================================");
-        System.out.println("Collecting all elements where ingredients>5");
-        list.stream()
-                .filter(m -> m.getIngredients().length >= 5)
-                .collect(Collectors.toList())
-                .forEach(System.out::println);
-
 
         System.out.println("==============================================");
         System.out.println("collect only name in lower case and sort in descending order ");
@@ -83,7 +76,7 @@ public class MedicineRunner{
 
         System.out.println("==============================================");
         System.out.println("collect all manufacture date less than 30 days");
-        list.stream().filter(l -> l.getManfDate().isBefore(LocalDate.now())).forEach(l -> System.out.println(l));
+        list.stream().filter(l -> l.getManfDate().isBefore(LocalDate.now().plusDays(30))).forEach(l -> System.out.println(l));
 
 
         System.out.println("sort all medicine by company name");
@@ -121,7 +114,7 @@ public class MedicineRunner{
 
         System.out.println("==============================================");
         System.out.println("collect all manufacture date greater than 30 days");
-        list.stream().filter(l -> l.getManfDate().isAfter(LocalDate.now())).forEach(l -> System.out.println(l));
+        list.stream().filter(l->l.getManfDate().isAfter(LocalDate.now().plusDays(30))).forEach(r-> System.out.println(r));
 
     }
 }

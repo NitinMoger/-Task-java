@@ -72,10 +72,7 @@ public class ShirtBrandMapping {
             }
           });
 
-
-
-
-            Map<String, String> landOwnerMap = new HashMap<>();
+        Map<String, String> landOwnerMap = new HashMap<>();
             landOwnerMap.put("Bengaluru", "Ravi");
             landOwnerMap.put("Sirsi", "Shambhu");
             landOwnerMap.put("Davnagere", "Anil");
